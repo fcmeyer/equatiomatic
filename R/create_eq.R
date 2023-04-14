@@ -479,11 +479,11 @@ swap_names <- function(name_vector, primary) {
 escape_tex <- function(term) {
   unescaped <- c(" ", "&", "%", "$", "#", "_", "{", "}", "~", "^", "\\")
   
-  hat <- ifelse(is_html_output(), "\\texttt{^}", "\\texttt{\\^{}}")
-  
+  # hat <- ifelse(is_html_output(), "\\texttt{^}", "\\texttt{\\^{}}")
+
   escaped <- c(
     "\\ ", "\\&", "\\%", "\\$", "\\#", "\\_", "\\{", "\\}",
-    "\\char`\\~", hat, "\\backslash "
+    "\\char`\\~", "\\^", "\\backslash "
   )
 
   # Split term into a vector of single characters
