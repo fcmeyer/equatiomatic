@@ -483,7 +483,7 @@ escape_tex <- function(term) {
 
   escaped <- c(
     "\\ ", "\\&", "\\%", "\\$", "\\#", "\\_", "\\{", "\\}",
-    "\\char`\\~", "^", "\\backslash "
+    "\\char`\\~", "\\^", "\\backslash "
   )
 
   # Split term into a vector of single characters
